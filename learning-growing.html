@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learning &amp; Growing — Ben Taylor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="wrap site-nav-inner">
+      <a class="site-nav-logo" href="index.html">Ben Taylor</a>
+      <div class="site-nav-links">
+        <a href="clothing-mockups.html">Clothing Mockups</a>
+        <a href="contracted-works.html">Contracted Works</a>
+        <a href="learning-growing.html" class="active">Learning &amp; Growing</a>
+        <a href="paintings.html">Paintings</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="wrap">
+      <h1>Learning &amp; Growing</h1>
+      <p class="page-desc">Practice pieces, experiments, and skill-building work.</p>
+    </div>
+  </header>
+
+  <section class="gallery">
+    <div class="wrap">
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="contact">
+        <strong>Ben Taylor</strong><br>
+        <a href="mailto:ssbentaylorr@gmail.com">ssbentaylorr@gmail.com</a>
+      </div>
+      <div>&copy; <span id="year"></span> Ben Taylor</div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  <script>
+    renderGallery('learning', 'More experiments coming soon.');
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

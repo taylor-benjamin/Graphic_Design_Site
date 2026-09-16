@@ -1,0 +1,3 @@
+# Full-resolution backups of images that were downscaled for the site.
+# Not needed for deployment and too large for GitHub (some files >100MB).
+_full_res_originals/

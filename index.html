@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ben Taylor — Graphic Design Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="wrap site-nav-inner">
+      <a class="site-nav-logo" href="index.html">Ben Taylor</a>
+      <div class="site-nav-links">
+        <a href="clothing-mockups.html">Clothing Mockups</a>
+        <a href="contracted-works.html">Contracted Works</a>
+        <a href="learning-growing.html">Learning &amp; Growing</a>
+        <a href="paintings.html">Paintings</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <img class="hero-logo" src="assets/logo.jpg" alt="Ben Taylor logo">
+      <div>
+        <h1>Ben Taylor</h1>
+        <p class="tagline">Graphic Designer, Artist, and Brand Manager</p>
+        <nav class="contact-links">
+          <a href="mailto:ssbentaylorr@gmail.com">ssbentaylorr@gmail.com</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="sections">
+    <div class="wrap">
+      <h2>Portfolio</h2>
+      <div class="section-grid">
+
+        <a class="section-card" href="clothing-mockups.html">
+          <span class="cover">
+            <img src="Clothing%20Mockups/human%20hoodie.png" alt="Clothing mockups preview" loading="lazy">
+          </span>
+          <span class="card-body">
+            <h3>Clothing Mockups</h3>
+            <p class="card-desc">Apparel graphics and product mockups — tees, hoodies, zip-ups, and more.</p>
+            <span class="count">View gallery</span>
+          </span>
+        </a>
+
+        <a class="section-card" href="contracted-works.html">
+          <span class="cover">
+            <img src="Contracted_works/windward%20logos.png" alt="Contracted works preview" loading="lazy">
+          </span>
+          <span class="card-body">
+            <h3>Contracted Works</h3>
+            <p class="card-desc">Paid client and freelance design work.</p>
+            <span class="count">View gallery</span>
+          </span>
+        </a>
+
+        <a class="section-card" href="learning-growing.html">
+          <span class="cover">
+            <img src="Learning_Growing/TIMEANDPLACE%20WORK.png" alt="Learning and growing preview" loading="lazy">
+          </span>
+          <span class="card-body">
+            <h3>Learning &amp; Growing</h3>
+            <p class="card-desc">Practice pieces, experiments, and skill-building work.</p>
+            <span class="count">View gallery</span>
+          </span>
+        </a>
+
+        <a class="section-card" href="paintings.html">
+          <span class="cover">
+            <img src="Paintings/IMG_8008-2.jpg" alt="Paintings preview" loading="lazy">
+          </span>
+          <span class="card-body">
+            <h3>Paintings</h3>
+            <p class="card-desc">Original paintings and hand-painted work.</p>
+            <span class="count">View gallery</span>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="contact">
+        <strong>Ben Taylor</strong><br>
+        <a href="mailto:ssbentaylorr@gmail.com">ssbentaylorr@gmail.com</a>
+      </div>
+      <div>&copy; <span id="year"></span> Ben Taylor</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

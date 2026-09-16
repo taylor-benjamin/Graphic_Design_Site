@@ -1,0 +1,414 @@
+:root {
+  --bg: #ffffff;
+  --surface: #f6f5f2;
+  --text: #151515;
+  --muted: #6b6b6b;
+  --border: #e7e5e0;
+  --accent: #ff4d2e;
+  --max-width: 1080px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* ---------- Site nav ---------- */
+
+nav.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.site-nav-logo {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.site-nav-logo:hover { color: var(--accent); }
+
+.site-nav-links {
+  display: flex;
+  gap: 24px;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.site-nav-links a {
+  color: var(--muted);
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.site-nav-links a:hover { color: var(--text); }
+
+.site-nav-links a.active {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+/* ---------- Header ---------- */
+
+header.hero {
+  padding: 96px 0 64px;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.hero-logo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+
+header.hero h1 {
+  font-size: 2.8rem;
+  margin: 0 0 8px;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+header.hero p.tagline {
+  font-size: 1.2rem;
+  color: var(--muted);
+  margin: 0 0 20px;
+}
+
+nav.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.95rem;
+}
+
+nav.contact-links a {
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1px;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+nav.contact-links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Compact header used on gallery pages */
+
+header.page-header {
+  padding: 40px 0 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+header.page-header h1 {
+  font-size: 2rem;
+  margin: 0 0 6px;
+  letter-spacing: -0.02em;
+}
+
+header.page-header p.page-desc {
+  color: var(--muted);
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* ---------- Section grid (home page) ---------- */
+
+section.sections {
+  padding: 64px 0 88px;
+}
+
+section.sections h2 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin: 0 0 28px;
+  font-weight: 600;
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.section-card {
+  position: relative;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--surface);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -20px rgba(0,0,0,0.35);
+  border-color: var(--text);
+}
+
+.section-card .cover {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: var(--surface);
+  overflow: hidden;
+  position: relative;
+}
+
+.section-card .cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.section-card:hover .cover img {
+  transform: scale(1.05);
+}
+
+.section-card .cover.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding: 24px;
+}
+
+.section-card .card-body {
+  padding: 20px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.section-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.section-card .card-desc {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.section-card .count {
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  margin-top: 6px;
+}
+
+/* ---------- Gallery grid (category pages) ---------- */
+
+section.gallery {
+  padding: 48px 0 88px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--surface);
+  cursor: zoom-in;
+  padding: 0;
+  text-align: left;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--text);
+}
+
+.gallery-item .thumb-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item .item-title {
+  padding: 12px 14px 14px;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.empty-state {
+  padding: 64px 24px;
+  text-align: center;
+  color: var(--muted);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+}
+
+.empty-state p { margin: 0; }
+
+/* ---------- Lightbox ---------- */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 40px;
+}
+
+.lightbox.open { display: flex; }
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+}
+
+.lightbox .lightbox-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  max-width: 100%;
+}
+
+.lightbox .lightbox-caption {
+  color: #f2f2f2;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.lightbox .lightbox-close,
+.lightbox .lightbox-nav {
+  position: fixed;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.15s ease;
+}
+
+.lightbox .lightbox-close:hover,
+.lightbox .lightbox-nav:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.lightbox .lightbox-close {
+  top: 24px;
+  right: 24px;
+}
+
+.lightbox .lightbox-nav.prev { left: 24px; top: 50%; transform: translateY(-50%); }
+.lightbox .lightbox-nav.next { right: 24px; top: 50%; transform: translateY(-50%); }
+
+/* ---------- Footer ---------- */
+
+footer {
+  padding: 44px 0 72px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
+}
+
+footer a { color: var(--text); }
+footer a:hover { color: var(--accent); }
+
+footer .contact { margin-bottom: 8px; }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 800px) {
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .section-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  header.hero { padding: 56px 0 40px; }
+  header.hero h1 { font-size: 2.1rem; }
+  .hero-inner { gap: 18px; }
+  .hero-logo { width: 64px; height: 64px; }
+  .section-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .lightbox { padding: 20px; }
+  .lightbox .lightbox-nav { width: 38px; height: 38px; }
+  .lightbox .lightbox-nav.prev { left: 10px; }
+  .lightbox .lightbox-nav.next { right: 10px; }
+  .lightbox .lightbox-close { top: 12px; right: 12px; }
+}
+
+@media (max-width: 420px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+}
