@@ -159,13 +159,28 @@ const PORTFOLIO_ITEMS = [
     "category": "contracted"
   },
   {
+    "file": "Contracted_works/geaux blooms.png",
+    "title": "Geaux Blooms",
+    "category": "contracted"
+  },
+  {
     "file": "Contracted_works/pink and red chick logo sideways.png",
     "title": "Pink and Red Chick Logo Sideways",
     "category": "contracted"
   },
   {
+    "file": "Contracted_works/problem child album cover copy.png",
+    "title": "Problem Child Album Cover",
+    "category": "contracted"
+  },
+  {
     "file": "Contracted_works/problem child graphic.png",
     "title": "Problem Child Graphic",
+    "category": "contracted"
+  },
+  {
+    "file": "Contracted_works/redstickchick sticker.png",
+    "title": "Redstickchick Sticker",
     "category": "contracted"
   },
   {
@@ -196,6 +211,11 @@ const PORTFOLIO_ITEMS = [
   {
     "file": "Contracted_works/zizzi album cover.png",
     "title": "Zizzi Album Cover",
+    "category": "contracted"
+  },
+  {
+    "file": "Contracted_works/zizzi tee mockups.png",
+    "title": "Zizzi Tee Mockups",
     "category": "contracted"
   },
   {
