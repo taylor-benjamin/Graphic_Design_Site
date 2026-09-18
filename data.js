@@ -249,11 +249,6 @@ const PORTFOLIO_ITEMS = [
     "category": "learning"
   },
   {
-    "file": "Learning_Growing/HORSES DONT STOP GRAPHIC.png",
-    "title": "HORSES DONT STOP GRAPHIC",
-    "category": "learning"
-  },
-  {
     "file": "Learning_Growing/human design.png",
     "title": "Human Design",
     "category": "learning"
