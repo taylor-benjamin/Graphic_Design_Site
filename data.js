@@ -4,11 +4,6 @@
 // To move an image between sections, move the actual file into the matching folder and update its "file" and "category" here.
 const PORTFOLIO_ITEMS = [
   {
-    "file": "Clothing Mockups/black logo baby tee.png",
-    "title": "Black Logo Baby Tee",
-    "category": "clothing"
-  },
-  {
     "file": "Clothing Mockups/bootcamp pink polos.png",
     "title": "Bootcamp Pink Polos",
     "category": "clothing"
@@ -56,11 +51,6 @@ const PORTFOLIO_ITEMS = [
   {
     "file": "Clothing Mockups/futiguro metro babytee.png",
     "title": "Futiguro Metro Babytee",
-    "category": "clothing"
-  },
-  {
-    "file": "Clothing Mockups/geneva baby tee.png",
-    "title": "Geneva Baby Tee",
     "category": "clothing"
   },
   {
@@ -151,16 +141,6 @@ const PORTFOLIO_ITEMS = [
   {
     "file": "Clothing Mockups/this might be jesus hoodie.png",
     "title": "This Might Be Jesus Hoodie",
-    "category": "clothing"
-  },
-  {
-    "file": "Clothing Mockups/toga sweats.png",
-    "title": "Toga Sweats",
-    "category": "clothing"
-  },
-  {
-    "file": "Clothing Mockups/tongue zips.png",
-    "title": "Tongue Zips",
     "category": "clothing"
   },
   {
@@ -259,11 +239,6 @@ const PORTFOLIO_ITEMS = [
     "category": "learning"
   },
   {
-    "file": "Learning_Growing/fat graphic.png",
-    "title": "Fat Graphic",
-    "category": "learning"
-  },
-  {
     "file": "Learning_Growing/HORSE FLAG.png",
     "title": "HORSE FLAG",
     "category": "learning"
@@ -344,11 +319,6 @@ const PORTFOLIO_ITEMS = [
     "category": "learning"
   },
   {
-    "file": "Learning_Growing/SLIMEYOURSELF GRAPHICS.png",
-    "title": "SLIMEYOURSELF GRAPHICS",
-    "category": "learning"
-  },
-  {
     "file": "Learning_Growing/that travis poster copy 2.png",
     "title": "That Travis Poster Copy 2",
     "category": "learning"
@@ -366,11 +336,6 @@ const PORTFOLIO_ITEMS = [
   {
     "file": "Learning_Growing/wake up you gotta lock in bro complete.png",
     "title": "Wake Up You Gotta Lock In Bro Complete",
-    "category": "learning"
-  },
-  {
-    "file": "Learning_Growing/we rock re rock design distressed.png",
-    "title": "We Rock Re Rock Design Distressed",
     "category": "learning"
   },
   {
