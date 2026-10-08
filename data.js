@@ -174,6 +174,11 @@ const PORTFOLIO_ITEMS = [
     "category": "contracted"
   },
   {
+    "file": "Contracted_works/rapclubtee.png",
+    "title": "Rap Club Tee",
+    "category": "contracted"
+  },
+  {
     "file": "Contracted_works/SUGARFREE NO WATERMARK.png",
     "title": "SUGARFREE NO WATERMARK",
     "category": "contracted"
