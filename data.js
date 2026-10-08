@@ -4,16 +4,6 @@
 // To move an image between sections, move the actual file into the matching folder and update its "file" and "category" here.
 const PORTFOLIO_ITEMS = [
   {
-    "file": "Clothing Mockups/bootcamp pink polos.png",
-    "title": "Bootcamp Pink Polos",
-    "category": "clothing"
-  },
-  {
-    "file": "Clothing Mockups/cat army red tee.png",
-    "title": "Cat Army Red Tee",
-    "category": "clothing"
-  },
-  {
     "file": "Clothing Mockups/darth maul zipup mockup.png",
     "title": "Darth Maul Zipup Mockup",
     "category": "clothing"
@@ -26,11 +16,6 @@ const PORTFOLIO_ITEMS = [
   {
     "file": "Clothing Mockups/doomscrolling tee.png",
     "title": "Doomscrolling Tee",
-    "category": "clothing"
-  },
-  {
-    "file": "Clothing Mockups/drop 3 complete.png",
-    "title": "Drop 3 Complete",
     "category": "clothing"
   },
   {
