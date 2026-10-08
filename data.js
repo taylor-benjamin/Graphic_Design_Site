@@ -34,11 +34,6 @@ const PORTFOLIO_ITEMS = [
     "category": "clothing"
   },
   {
-    "file": "Clothing Mockups/emblem waffle knit.png",
-    "title": "Emblem Waffle Knit",
-    "category": "clothing"
-  },
-  {
     "file": "Clothing Mockups/emotions tee black.png",
     "title": "Emotions Tee Black",
     "category": "clothing"
@@ -129,11 +124,6 @@ const PORTFOLIO_ITEMS = [
     "category": "clothing"
   },
   {
-    "file": "Clothing Mockups/pegasus iradescent jackets.png",
-    "title": "Pegasus Iradescent Jackets",
-    "category": "clothing"
-  },
-  {
     "file": "Clothing Mockups/T'oga horse race.png",
     "title": "T'oga Horse Race",
     "category": "clothing"
@@ -147,11 +137,6 @@ const PORTFOLIO_ITEMS = [
     "file": "Clothing Mockups/white pegasus baby tee.png",
     "title": "White Pegasus Baby Tee",
     "category": "clothing"
-  },
-  {
-    "file": "Contracted_works/Album Cover Design.png",
-    "title": "Album Cover Design",
-    "category": "contracted"
   },
   {
     "file": "Contracted_works/brasshearts 4by5 complete.png",
@@ -249,11 +234,6 @@ const PORTFOLIO_ITEMS = [
     "category": "learning"
   },
   {
-    "file": "Learning_Growing/EXPERIMENT WITH BLKMARKT (10FOLD, KING OF EVERYTHING).png",
-    "title": "EXPERIMENT WITH BLKMARKT (10FOLD, KING OF EVERYTHING)",
-    "category": "learning"
-  },
-  {
     "file": "Learning_Growing/fakemink trading card.png",
     "title": "Fakemink Trading Card",
     "category": "learning"
@@ -321,11 +301,6 @@ const PORTFOLIO_ITEMS = [
   {
     "file": "Learning_Growing/outcorp logos.png",
     "title": "Outcorp Logos",
-    "category": "learning"
-  },
-  {
-    "file": "Learning_Growing/playing with logos.png",
-    "title": "Playing With Logos",
     "category": "learning"
   },
   {
